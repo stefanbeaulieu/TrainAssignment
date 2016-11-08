@@ -1,0 +1,38 @@
+/******************
+BODY
+******************/
+
+body {
+  background: #fff;
+}
+
+
+
+/******************
+HEADINGS
+******************/
+.jumbotron {
+  margin: 20px 0;
+  padding: 20px 10px;
+  border: 1px solid #000;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.subheading {
+  background-color: inherit;
+  margin: auto;
+  width: 100%;
+}
+
+
+/******************
+FONT
+******************/
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px #000;
+}
+

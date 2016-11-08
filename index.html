@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Train Assignment</title>
+  <!-- meta tags -->
+  <meta content="HTML,CSS,JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="assets/css/reset.css" media="screen" title="no title" type="text/css" />
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="assets/css/normalize.css" media="screen" title="no title" type="text/css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" type="text/css" />
+  <!-- My Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Anytime is Train Time</h1>
+    </div>
+    <!-- end jumbotron -->
+    <table class="table table-striped" id="employeeTable">
+      <thead>
+        <tr>
+          <th colspan="5">Current Train Schedule</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Train name</th>
+          <th>Destination</th>
+          <th>Frequency (Min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </tbody>
+    </table>
+
+	  <!-- Add new employee -->
+	  <div>
+	    <form action="">
+	      <div class="form-group">
+	        <label for="trainName">Train Name</label>
+	        <input type="input" class="form-control" id="name" placeholder="">
+	      </div>
+	      <div class="form-group">
+	        <label for="destination">Destination</label>
+	        <input type="input" class="form-control" id="destination" placeholder="">
+	      </div>
+	      <div class="form-group">
+	        <label for="firstTrain">First Train Time (HH:mm - Military Time)</label>
+	        <input type="input" class="form-control" id="firstTrain" placeholder="">
+	      </div>
+	      <div class="form-group">
+	        <label for="frequency">Frequency (Min)</label>
+	        <input type="input" class="form-control" id="frequency" placeholder="">
+	      </div>
+	      <button type="button" class="btn btn-default" id="addTrain">Submit</button>
+	    </form>
+	  </div> <!-- end div for employee add area -->
+	</div>
+
+	<script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  ,<!-- Link to Moment.js should go here -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js" type=""></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+</body>
+
+</html>
