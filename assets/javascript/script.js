@@ -35,7 +35,7 @@
     tRemainder = diffTime % frequency;
     tMinutesTillTrain = frequency - tRemainder;
     nextTrain = moment().add(tMinutesTillTrain, "minutes");
-    nextArrival = moment(nextTrain).format("hh:mm");
+    nextArrival = moment(nextTrain).format("HH:mm");
     // Code for handling the push
     database.ref().push({
         name: name,
@@ -56,11 +56,11 @@
     row.append($("<td>").html(childSnapshot.val().name));
     row.append($("<td>").html(childSnapshot.val().destination));
     row.append($("<td>").html(childSnapshot.val().frequency));
+    var savedNextArrival = (firstTrain - firstTimeConverted)
     row.append($("<td>").html(childSnapshot.val().nextArrival));
     row.append($("<td>").html(childSnapshot.val().tMinutesTillTrain));
     $("#employeeTable").append(row);
      console.log(tRemainder);
-     console.log(tMinutesTillTrain);
   }
 
 
